@@ -1,0 +1,67 @@
+.main-bg{
+  
+  background-color: #E30B5C;
+  
+  height: 1000px;
+  border-radius: 20px;
+ 
+}
+
+.sub-bg{
+  height:850px;
+  width: 98vw;
+  background-color: white;
+  padding: 80px;
+  margin-top: 10px;
+  border-radius: 30px;
+
+
+}
+
+/*Features*/
+a:hover{
+  background: #E30B5C;
+  color: whitesmoke;
+  padding:20px;
+}
+.box{
+  width: 33.0%;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  
+}
+.box i{
+  margin-bottom: 10px;
+}
+
+.css-logo{
+  color:#1e41a3 ;
+}
+
+.font-brand{
+  color:#E30B5C;
+}
+
+.font-medium{
+  font-size: 30px;
+  font-weight: 480;
+  line-height: 1.8rem;
+}
+
+.btn-brand{
+  width: 250px;
+  height: 50px;
+  background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  background: #E30B5C;
+  color: white;
+  font-weight: 500;
+}
+
+.pr-1{
+  padding-right: 15px;
+}
+
+.pb-1{
+  padding-bottom: 25px;
+}

@@ -1,0 +1,52 @@
+/* .main-bg{
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+} */
+
+.sub-bg{
+  height: 900px;
+  width: 100vw;
+  background: linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  padding: 80px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.pr-1{
+  padding-right: 15px;
+}
+
+.box{
+  width: 33.0%;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  
+}
+.box i{
+  margin-bottom: 10px;
+}
+
+.text-purple{
+  color: purple;
+}
+
+.text-peru{
+  color: peru;
+}
+
+.text-orange{
+  color: orange;
+}
+
+.font-medium{
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+a:hover{
+  padding: 25px;
+  background:	turquoise;
+}

@@ -1,0 +1,102 @@
+.main-bg{
+  background: linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  height: 1300px;
+}
+
+.bg-orange{
+  background-color: #E0BFB8;
+}
+
+.nav-height{
+  height: 90px;
+}
+
+a:hover{
+  background: #E30B5C;
+  color: whitesmoke;
+  padding:20px;
+}
+
+.current{
+  text-decoration: underline 5px 	#E30B5C;
+}
+
+.font-brand{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.text-brand{
+  color: #E30B5C;
+}
+
+.font-large{
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font-medium{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-font{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+ 
+}
+
+.font-primary{
+  color:  #E30B5C;
+}
+
+.pl-10{
+  padding-left: 350px;
+}
+
+
+
+.pl-40{
+  padding-left: 50px;
+}
+.pt-40{
+  padding-top: 40px;
+}
+
+.mr-10{
+  margin-right: 5rem;
+}
+
+.box{
+  width: 43.0%;
+  height: 420px;
+  float: right;
+  padding: 50px;
+  text-align: center; 
+  clear: both;
+}
+
+.btn-brand{
+  width: 250px;
+  height: 50px;
+  background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  background: #E30B5C;
+  color: white;
+  font-weight: 500;
+  clear: both;
+}
+
+.review-box{
+  width: 33.10%;
+  height: 400px;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  
+}
+.review-box i{
+  margin-bottom: 10px;
+}

@@ -1,0 +1,68 @@
+.pt-7{
+  padding-top: 7rem;
+}
+
+.text-orange{
+  color: orangered;
+}
+
+.text-brand{
+  color:#E30B5C;
+}
+
+.text-cobalt{
+  color: #1c49cf;
+}
+
+.text-blue{
+  color: blue;
+}
+
+.text-red{
+  color: red;
+}
+
+.text-green{
+  color: lime;
+}
+
+.text-decoration-1{
+  text-decoration: underline 5px solid #E30B5C ;
+}
+
+.main-bg{
+  background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  height: 670px;
+}
+
+.box{
+  width: 90.0%;
+  height: 640px;
+  padding: 50px;
+  margin: 60px;
+  margin-top: 0;
+  text-align: center; 
+ 
+}
+
+.float-left{
+  float:left;
+
+}
+
+a:hover{
+  padding:20px;
+  color: #DE3163  ;
+}
+
+/* .text-style1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+} */
+
+.btn-lge{
+  width: 250px;
+  height: 50px;
+  background-color: #DE3163  ;
+ 
+}
