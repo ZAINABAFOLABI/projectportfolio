@@ -5,7 +5,7 @@ export class Contact {
     public email: string,
     public message: string,
     public uxRating: string,
-    public feeQuote?: string
+    public resume?: string
   ) {  }
 
 }

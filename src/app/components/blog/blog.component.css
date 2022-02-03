@@ -2,7 +2,7 @@
   
   background-color: #E30B5C;
   
-  height: 1000px;
+  height: 950px;
   border-radius: 20px;
  
 }
@@ -49,13 +49,24 @@ a:hover{
   line-height: 1.8rem;
 }
 
+.font-purple{
+  color: purple;
+}
+
 .btn-brand{
   width: 250px;
   height: 50px;
   background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
   background: #E30B5C;
   color: white;
-  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+.btn:hover{
+  padding: 20px;
+  cursor: none;
+
 }
 
 .pr-1{
@@ -65,3 +76,63 @@ a:hover{
 .pb-1{
   padding-bottom: 25px;
 }
+
+
+/* Smartphone Screen */
+@media (min-width:320px) and (max-width:500px){
+  .main-bg{
+    height: 1700px;
+    border-radius: 20px; 
+  }
+
+  .sub-bg{
+    height:1650px;
+    width: 90vw;
+  }
+
+  .box{
+    width: 100%;
+    float: none;
+    padding: 20px; 
+  }
+}
+
+  /* Tablet screen */
+  @media 
+  (min-width: 501px) and (max-width: 768px){
+    .main-bg{
+      height: 1550px;
+      border-radius: 20px; 
+    }
+  
+    .sub-bg{
+      height:1490px;
+      width: 90vw;
+    }
+  
+    .box{
+      width: 100%;
+      float: none;
+      padding: 20px; 
+    }
+  }
+
+  
+ /*Normal*/
+ @media(min-width: 769px) and (max-width: 1200px){
+  .main-bg{
+    height: 1450px;
+    border-radius: 20px; 
+  }
+
+  .sub-bg{
+    height:1390px;
+    width: 90vw;
+  }
+
+  .box{
+    width: 100%;
+    float: none;
+    padding: 20px; 
+  }
+ }

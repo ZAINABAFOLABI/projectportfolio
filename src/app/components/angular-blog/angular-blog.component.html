@@ -1,0 +1,86 @@
+<div class="main-bg">
+  <i class="fab fa-angular fa-3x text-danger text-center pl-650 pt-20 pb-15"></i>
+  <h1 class="text-center brand-color">Angular Blog</h1>
+  <div class="sub-bg p-25 text-light">
+  <h2 class="text-light text-left pb-15">Angular 12 Global Installation</h2>
+  <p class="text-light">Navigate to visual studio </p>
+  <p class="text-light">Click on terminal, select new terminal</p>
+  <p class="text-light">run the command <span class="text-light font-boldd">npm i -g @angular/cli@12.0.0 </span> </p>
+  <h2 class="text-left text-light pb-15">Creating a New Angular Project</h2>
+  <p class="text-light">Git bash is a source control management system for windows, it allows users to type Git commands that makes source code management easier through versioning and commit history.</p>
+  <p>To install Git bash follow these steps:</p>
+  <li>Download the gitbash setup from the official website : <a class="text-light font-boldd" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </li>
+  <li>Download the installer</li>
+  <li>Run the .exe file you just downloaded and follow the instructions in the installer.</li>
+  <li>Installation is complete.</li>
+  <p>Navigate to Git bash on your pc and follow these steps to create a new angular project called Max stored in the directory projects/Max</p>
+  <ul class="text-light font-boldd">
+  <li>mkdir projects</li>
+  <li>cd projects</li>
+  <li>ng new Max</li>
+  <li>ls</li>
+  <li>cd Max</li>
+  <li>ls</li>
+  <li>code .</li>
+</ul>
+  <h2 class="brand-color2 text-left pb-15 ">Starting an Angular Project</h2>
+  <p>To view the contents of an angular application, select new terminal in vs code</p>
+  <p>run the command <span class="text-light font-boldd">ng serve --open</span>  </p>
+  <p>if the default port, port 4200 is already in use, run <span class="text-light font-boldd">ng serve --port 4300</span>  or any port number of your choice.</p>
+  <h2 class="brand-color2 text-left pb-15">Using Bootstrap, Font-awesome, Google Fonts, Alert Messaging</h2>
+  <p>In order to use bootstrap  & font-awesome there are two options either by installation or using a CDN link embedded in the index.html file of of your project </p>
+  <h3 class="brand-color2 text-left pb-15">Installation</h3>
+  <p class=""> Run the command <span class="text-light font-boldd">npm i bootstrap font-awesome popper --save</span>  in your terminal</p>
+  <p>Update the angular.json file styles & scripts by doing the following</p>
+  <ul class="text-light font-boldd">
+  <li>Styles:"./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "./node_modules/font-awesome/css/font-awesome.min.css"
+  </li>
+  <li>Scripts:["./node_modules/bootstrap/dist/js/bootstrap.min.js",
+  "./node_modules/popper/index.js" ] 
+  </li>
+</ul>
+  <h3 class="text-light text-left pb-15 ">Using CDN Link</h3>
+  <p>In the index.html file file right after the meta tags, copy and paste this link, <code class="text-light font-boldd"> link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"</code> </p>
+  <p>In the index.html file right before the closing body tag embed this links in a script tag, one for each,
+    <code class="text-light font-boldd">
+       src="https://kit.fontawesome.com/8fc7552d5d.js" crossorigin="anonymous" 
+       <br>
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+    </code>
+     </p>
+  <p>To use google fonts</p>
+  
+
+  <h2 class="text-light text-left pt-10 pb-15">Creating Components</h2>
+  <p>select new terminal in your IDE (visual studio)</p>
+  <p>You can either use a short or long method</p>
+  <li>Short method : run the command <span class="text-light font-boldd">ng g c components/home </span> to generate a new home component in your angular application</li>
+  <li>Long method: run the command <span class="text-light font-boldd">ng generate component components/home</span> </li>
+  <h2 class="text-light text-left pb-15">Creating Services</h2>
+  <p>In your Vs code terminal run the command <span class="text-light font-boldd">ng g s services/auth</span>  to generate an auth service file and a spec file.</p>
+  <h2 class="text-left brand-color2 pb-15">Creating a Class</h2>
+  <p>To create a an angular class called models run <span class="text-light font-boldd">ng g class/models</span> </p>
+  <h2 class="text-left brand-color2  pb-15">Creating an Approuting module</h2>
+  <p>Sometimes when a new angular project is created an app-routing module may not be generated which is essential to handle navigation from one component page to another.</p>
+  <li>run the command <span class="text-light font-boldd">ng g module app-routing --flat --module=app</span> </li>
+  <h2 class="text-light text-left pt-20 pb-15">Setting Angular Routing Paths</h2>
+  <p>Routing paths setting and usage basically involves these steps below</p>
+  <li>In the app-routing.module.ts file import all the components you will like to route to for example: <span class="text-light font-boldd">import  HomeComponent  from './components/home/home.component'; </span> remember to include the curly braces around HomeComponent</li>
+  <li class="text-light font-boldd">import Routes,Router,RouterModule from'@angular/router'; </li>
+  <li>In the exports section of your app-routing.module.ts file inject the RouterModule.</li>
+  <li>create an array constant routes and set it to a type of Routes, for example  <span class="text-light font-boldd">const routes:Routes=[]</span> </li>
+  <li>specify the route path and component while enclosing it in a curly braces e.g <span class="text-light font-boldd">path:'home', component:HomeComponent</span> </li>
+  <li>To navigate tothe home component from any component in your angular project simply set the routerLink path to home as in /home </li>
+  <h2 class="text-light text-left pb-15">Handling Search Exceptions In Angular Projects</h2>
+  <p>Users may erroneously search for a page that does not exist in your project, and forget how to navigate back, you can handle these exceptions using a notfoundcomponent.</p>
+  <p>Follow these steps below in order to create a notfound component, inform the user of his/her possible error and kindly  suggest a redirection to your home page.</p>
+  <li class="text-light font-boldd">ng g c components/notfound</li>
+  <li>in the notfound.component.html file create an easy to understand directive such as "You Might Want to Rephrase Your Search or check here <a routerLink=""></a> " set the routerLink path to your home page.</li>
+  <li>In the path creation for the notfound component set its value to '**' these simply handles all exceptions.</li>
+
+  
+</div>
+
+
+</div>

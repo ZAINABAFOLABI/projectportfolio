@@ -1,0 +1,58 @@
+.main-bg{
+  
+  background-color: white;
+  
+  height: 2900px;
+  border-radius: 20px;
+ 
+}
+
+.sub-bg{
+  height:2700px;
+  width: 98vw;
+  background-color:#E30B5C ;
+  padding: 80px;
+  margin-top: 10px;
+  border-radius: 30px;
+
+
+}
+
+.brand-color{
+  color:#E30B5C;
+}
+
+.brand-color2{
+  text-decoration: underline #E30B5C 5px solid;
+  
+}
+
+.pl-650{
+  padding-left: 650px;
+}
+
+.pt-10{
+  padding-top: 10px;
+}
+
+.pt-20{
+  padding-top: 20px;
+
+}
+
+.pb-10{
+  padding-bottom: 10px;
+}
+
+.pb-15{
+  padding-bottom: 15px;
+}
+
+.p-25{
+  padding: 25px;
+}
+
+.font-boldd{
+  font-weight: 800;
+  font-size: 18px;
+}

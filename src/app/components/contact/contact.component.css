@@ -1,6 +1,19 @@
 .text-brand{
   color:#E30B5C ;
 }
+
+.bg-brand{
+  background-color: #E30B5C;
+}
+
+.text-green{
+  color: green;
+ 
+}
+
+.bg-green{
+  background: green;
+}
 .text-brand2{
   color:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%) ;
 }
@@ -9,6 +22,11 @@
   width: 250px;
   height: 50px;
   background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+}
+
+.btn-medium{
+  width: 150px;
+  height: 40px;
 }
 
 .font-brand{
@@ -41,4 +59,36 @@
 
 .height-medium{
   height: 150px;
+  width: 100%;
+}
+
+.box{
+  width: 33.3%;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  background-color: honeydew;
+ 
+ 
+}
+.box i{
+  margin-bottom: 10px;
+}
+
+a:hover{
+  background: #E30B5C;
+  padding: 20px;
+}
+
+@media (min-width:320px) and (max-width:500px){
+  .box{
+    float: none;
+    width: 100%;
+  padding: 30px;
+  }
+
+  .pl-10{
+    padding-left: 20px;
+  }
+
 }

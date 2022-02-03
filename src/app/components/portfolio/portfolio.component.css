@@ -16,6 +16,12 @@
 .pr-1{
   padding-right: 15px;
 }
+.round-padding{
+  /* padding:  5px ; */
+   background: #3d59ab;
+  border-radius: 60%;
+  padding: 8px;
+}
 
 .box{
   width: 33.0%;
@@ -36,8 +42,13 @@
   color: peru;
 }
 
+.text-success-gradient{
+ 
+color: green;
+}
+
 .text-orange{
-  color: orange;
+  color:#ff6700;
 }
 
 .font-medium{
@@ -50,3 +61,72 @@ a:hover{
   padding: 25px;
   background:	turquoise;
 }
+
+/* Smartphone Screen */
+@media (min-width:320px) and (max-width:500px){
+  .sub-bg{
+    height: 1400px;
+    width: 100vw;
+   
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .box{
+    width: 98.0%;
+    float: none;
+    padding: 20px;
+  }
+  .box i{
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet screen */
+@media 
+(min-width: 501px) and (max-width: 768px){
+  .sub-bg{
+    height: 1400px;
+    width: 100vw;
+   
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 0px;
+   
+  }
+
+  .box{
+    width: 98.0%;
+    float: none;
+    padding: 20px;
+  }
+  .box i{
+    margin-bottom: 10px;
+  }
+}
+
+ 
+ /*Normal*/
+ @media(min-width: 769px) and (max-width: 1200px){
+  .sub-bg{
+    height: 1250px;
+    width: 100vw;
+   
+    padding: 40px;
+    margin-top: 10px;
+    border-radius: 0px;
+   
+  }
+
+  .box{
+    width: 98.0%;
+    float: none;
+    padding: 20px;
+  }
+  .box i{
+    margin-bottom: 10px;
+  }
+ }

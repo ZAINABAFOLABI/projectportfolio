@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 import { FormGroup,FormControl,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Contact } from 'src/app/contact';
@@ -23,7 +24,13 @@ export class ContactComponent implements OnInit {
 
  submitted = false;
 
- onSubmit() { this.submitted = true;
+ onSubmit() { this.submitted=true;
+   console.log(this.model)
+   this.dataService.enroll(this.model)
+   .subscribe(
+     data=>console.log('success!', data),
+     error => console.log('error',error)
+   )
 }
 
  newContact() {
@@ -42,7 +49,7 @@ export class ContactComponent implements OnInit {
   // phoneNumber:string='';
   // message:string='';
 
-  constructor() {   }
+  constructor(private dataService:DataService) {   }
 
   ngOnInit(): void {
     

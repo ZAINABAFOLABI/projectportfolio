@@ -32,12 +32,12 @@
 
 .main-bg{
   background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
-  height: 670px;
+  height: 720px;
 }
 
 .box{
   width: 90.0%;
-  height: 640px;
+  height: 680px;
   padding: 50px;
   margin: 60px;
   margin-top: 0;
@@ -65,4 +65,54 @@ a:hover{
   height: 50px;
   background-color: #DE3163  ;
  
+}
+
+/* Smartphone Screen */
+@media (min-width:320px) and (max-width:500px){
+ 
+.main-bg{
+  background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+  height: 1900px;
+} 
+ .box{
+   height: 1800px;
+   width: 75%;
+ }
+}
+
+/* Tablet screen */
+@media 
+(min-width: 501px) and (max-width: 768px) {
+    .main-bg{
+      background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+      height: 1600px;
+    } 
+     .box{
+       height: 1500px;
+       width: 75%;
+     }
+}
+
+ /*Normal*/
+ @media(min-width: 769px) and (max-width: 1200px){
+  .main-bg{
+    background:linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
+    height: 1100px;
+  }
+  .box{
+    height: 1000px;
+    width: 85%;
+  }
+}
+
+ /*Widescreen*/
+ @media(min-width: 1201px){
+   .main-bg{
+     height: 800px;
+   }
+
+   .box{
+     height: 750px;
+     width: 90%;
+   }
 }
