@@ -5,11 +5,11 @@
 } */
 
 .sub-bg{
-  height: 900px;
+  height: 500px;
   width: 100vw;
   background: linear-gradient(147.87deg, 	#DE3163 26.36%, #770737  125.59%);
   padding: 80px;
-  margin-top: 10px;
+  margin-top: 110px;
   border-radius: 30px;
 }
 
@@ -28,7 +28,7 @@
   float: left;
   padding: 50px;
   text-align: center;
-  
+
 }
 .box i{
   margin-bottom: 10px;
@@ -43,7 +43,7 @@
 }
 
 .text-success-gradient{
- 
+
 color: green;
 }
 
@@ -65,9 +65,9 @@ a:hover{
 /* Smartphone Screen */
 @media (min-width:320px) and (max-width:500px){
   .sub-bg{
-    height: 1400px;
+    height: 400px;
     width: 100vw;
-   
+
     padding: 40px;
     margin-top: 10px;
     border-radius: 0px;
@@ -86,16 +86,16 @@ a:hover{
 }
 
 /* Tablet screen */
-@media 
+@media
 (min-width: 501px) and (max-width: 768px){
   .sub-bg{
-    height: 1400px;
+    height: 800px;
     width: 100vw;
-   
+
     padding: 40px;
     margin-top: 10px;
     border-radius: 0px;
-   
+
   }
 
   .box{
@@ -108,17 +108,17 @@ a:hover{
   }
 }
 
- 
+
  /*Normal*/
  @media(min-width: 769px) and (max-width: 1200px){
   .sub-bg{
-    height: 1250px;
+    height: 800px;
     width: 100vw;
-   
+
     padding: 40px;
     margin-top: 10px;
     border-radius: 0px;
-   
+
   }
 
   .box{

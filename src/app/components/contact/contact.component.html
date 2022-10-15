@@ -1,52 +1,52 @@
 <div class="row bg-light pt-4 ">
-  <div class="col-md-6 mx-auto pl-30 pt-4"> 
-  
-     
+  <div class="col-md-6 mx-auto pl-30 pt-4">
+
+
        <!-- <h4 class="pb-4 pt-8 text-dark">
        <span class="text-brand font-brand"> Zainab Afolabi | Frontend Engineer|Angular Developer|Bilingual</span>
-       </h4><br> 
+       </h4><br>
        <h1 class="font-brand pt-6"><strong>A Warm Welcome  <br> To You!</strong></h1>
        <p class="text-dark pt-3"> Please Fill this Form to Contact me </p>
        <span>Don't like forms? mail me at zainab.o.afolabi@gmail.com</span>
-       
+
       <div formGroup="contactForm" (ngSubmit)="contact">
         <div class="form-group  pt-3">
-          
-          <input class="form-control pt-3 input-light" type="email" name="email" 
+
+          <input class="form-control pt-3 input-light" type="email" name="email"
           formControlName="email"
-          
+
            placeholder="client@gmail.com "  #email required><br>
         </div>
         <div class="form-group ">
         <div class="form-group  pt-3">
-          
-          <input class="form-control pt-3 input-light" type="textarea" name="number" 
+
+          <input class="form-control pt-3 input-light" type="textarea" name="number"
           formControlName="phoneNumber"
-          
+
            placeholder="+2348055678994"  #email required><br>
         </div>
         <div class="form-group ">
           <span class="input-group-text">Your Message</span>
             <textarea class="form-control" aria-label="With textarea"  formControlName="message"
             placeholder="I want a website & dashboard pricing quote || I would like to hire you" #message required></textarea>
-          <textarea name="message" id="message"  placeholder="I want a website & dashboard pricing quote| I would like to hire you" #message required ></textarea> 
-          <input width='100%' height='200px' class="form-control pt-3 input-light " type="textarea" name="message" 
+          <textarea name="message" id="message"  placeholder="I want a website & dashboard pricing quote| I would like to hire you" #message required ></textarea>
+          <input width='100%' height='200px' class="form-control pt-3 input-light " type="textarea" name="message"
           formControlName="message"
            placeholder="I want a website & dashboard pricing quote| I would like to hire you"  #message required><br>
        </div><br>
         <a routerLink="">
           <input class="btn  btn-lge text-light " type="submit" value="SEND"
-         
+
                       >
          </a>
          <br>
-      
+
       </div>
-  
-     
-     
+
+
+
   </div>
-  </div> 
+  </div>
 -->
 
   <div class="container">
@@ -59,7 +59,7 @@
     {{model | json}} -->
     <div class="form-group">
      <label for="name">Name</label>
-     <input type="text" id="name" required class="form-control" name="name"  [(ngModel)]="model.name"  #name="ngModel" minlength="3"> 
+     <input type="text" id="name" required class="form-control" name="name"  [(ngModel)]="model.name"  #name="ngModel" minlength="3">
      <div [hidden]="name.valid || name.pristine"
              class="alert alert-danger">
           Name must be at least 3 characters long
@@ -145,7 +145,7 @@
     <div class="col-xs-3">Resume request</div>
     <div class="col-xs-9">{{ model.resume }}</div>
   </div>
-  
+
   <br>
   <button class="btn bg-dark text-light btn-medium" (click)="submitted=false">Edit</button><br><br>
   <a routerLink="/home"><button class="btn btn-medium bg-brand text-light" (click)="submitted=false">Ok</button></a>
@@ -165,14 +165,14 @@
     <div class="box bg-light">
         <i class="fas fa-phone fa-3x text-green"></i>
         <h3>Phone Number</h3>
-        <p>+2349077926776</p>
+        <p>+447823843022</p>
     </div>
     <div class="box bg-light">
         <i class="fas fa-envelope fa-3x text-brand"></i>
         <h3>Email Address</h3>
         <p>zainab.o.afolabi@gmail.com</p>
     </div>
-    
+
   </div>
 
 </section>
